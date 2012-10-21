@@ -1,0 +1,15 @@
+{
+    "name": "ohe",
+    "description": "lolwut",
+    "author": "Bryan Berg <bryan@ber.gd>",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "node-gyp": ">= 0.7.1",
+        "express": ">= 3.0.0rc5",
+        "socket.io": ">= 0.9.10",
+        "event-stream": ">= 3.0.7",
+        "request": ">= 2.11.4",
+        "async": ">= 0.1.22"
+    }
+}
