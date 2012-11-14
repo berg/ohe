@@ -2,7 +2,12 @@
 
 var path = require('path');
 var fs = require('fs');
+var nconf = require('nconf');
 
-var config = require('config');
+nconf.argv().env();
 
-require(path.join(path.dirname(fs.realpathSync(__filename)), '../lib/ohe'));
+nconf.file({ file: path.join(__dirname, '../config.json') });
+
+console.log(nconf);
+
+require(path.join(__dirname, '../lib/ohe'));
